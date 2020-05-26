@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SizesVC" customModule="FYF_Beta" customModuleProvider="target">
+            <connections>
+                <outlet property="pickerClothesView" destination="3Zm-AZ-BPt" id="GxE-j6-YSf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdQ-bK-hod">
+                    <rect key="frame" x="0.0" y="596" width="414" height="300"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ej9-ZI-cHS">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idv-xx-JBo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                    <color key="backgroundColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                    <state key="normal" title="Atrás">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="backBtnPressed:" destination="-1" eventType="touchUpInside" id="Xzm-nQ-Wb8"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="w7f-5S-bzN"/>
+                            </constraints>
+                        </stackView>
+                        <pickerView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Zm-AZ-BPt">
+                            <rect key="frame" x="0.0" y="40" width="414" height="260"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="Hrt-oa-cfl"/>
+                        <constraint firstAttribute="trailing" secondItem="3Zm-AZ-BPt" secondAttribute="trailing" id="ITc-ae-gnI"/>
+                        <constraint firstItem="3Zm-AZ-BPt" firstAttribute="top" secondItem="ej9-ZI-cHS" secondAttribute="bottom" id="YJa-ZS-K5l"/>
+                        <constraint firstItem="ej9-ZI-cHS" firstAttribute="top" secondItem="DdQ-bK-hod" secondAttribute="top" id="cka-wd-93s"/>
+                        <constraint firstItem="ej9-ZI-cHS" firstAttribute="leading" secondItem="DdQ-bK-hod" secondAttribute="leading" id="lkN-SF-ZZv"/>
+                        <constraint firstAttribute="trailing" secondItem="ej9-ZI-cHS" secondAttribute="trailing" id="ruM-46-2Vd"/>
+                        <constraint firstAttribute="bottom" secondItem="3Zm-AZ-BPt" secondAttribute="bottom" id="yNn-mc-8qH"/>
+                        <constraint firstItem="3Zm-AZ-BPt" firstAttribute="leading" secondItem="DdQ-bK-hod" secondAttribute="leading" id="zaC-Eu-UZ7"/>
+                    </constraints>
+                </view>
+                <visualEffectView opaque="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="yct-lP-nxf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="596"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tnY-k0-zbX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="596"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="systemUltraThinMaterialLight"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DdQ-bK-hod" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="08t-yt-IOS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DdQ-bK-hod" secondAttribute="trailing" id="0F4-Ed-HP9"/>
+                <constraint firstItem="DdQ-bK-hod" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6VQ-EQ-AcB"/>
+                <constraint firstAttribute="bottom" secondItem="DdQ-bK-hod" secondAttribute="bottom" id="7m4-yb-cRp"/>
+                <constraint firstItem="DdQ-bK-hod" firstAttribute="top" secondItem="yct-lP-nxf" secondAttribute="bottom" id="96i-kl-P8e"/>
+                <constraint firstItem="yct-lP-nxf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PnZ-O0-IuI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yct-lP-nxf" secondAttribute="trailing" id="rMt-HE-hN6"/>
+                <constraint firstItem="yct-lP-nxf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="u1j-7Y-wEs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="141" y="102"/>
+        </view>
+    </objects>
+</document>

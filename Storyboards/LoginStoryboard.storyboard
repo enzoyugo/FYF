@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bdu-ro-abz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Prime-Regular.ttf">
+            <string>Prime-Regular</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginViewController-->
+        <scene sceneID="fPe-A8-epD">
+            <objects>
+                <viewController title="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1GY-s8-G0U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vLL-rN-Z40" customClass="RoundedShadowView" customModule="FindYourFit" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8yZ-Kw-Qhk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGW-8k-VFk" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="659"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Login1" translatesAutoresizingMaskIntoConstraints="NO" id="fci-9h-UWJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.040944786269999998" green="0.040944786269999998" blue="0.040944786269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="J2k-C3-xLQ">
+                                        <rect key="frame" x="20" y="667" width="374" height="175"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your Fit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teQ-ND-zyg">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVu-mR-HpX" customClass="RoundedButton" customModule="FindYourFit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="52.5" width="374" height="36"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                                <state key="normal" title="Login/Signup">
+                                                    <color key="titleColor" red="0.040944786269999998" green="0.040944786269999998" blue="0.040944786269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="2l2-td-zhj" kind="presentation" modalPresentationStyle="fullScreen" id="75g-7M-zsb"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="XUp-oO-mw7" customClass="RoundedImageView" customModule="FindYourFit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="110.5" width="374" height="64.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="175" id="4WC-ot-Zrb"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="J2k-C3-xLQ" firstAttribute="leading" secondItem="8yZ-Kw-Qhk" secondAttribute="leading" constant="20" symbolic="YES" id="5bR-Ua-ccZ"/>
+                                    <constraint firstItem="IGW-8k-VFk" firstAttribute="leading" secondItem="8yZ-Kw-Qhk" secondAttribute="leading" id="Ifk-zS-CAB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.040944786269999998" green="0.040944786269999998" blue="0.040944786269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y0N-Fe-Ekf" firstAttribute="bottom" secondItem="8yZ-Kw-Qhk" secondAttribute="bottom" constant="20" id="5Mf-9S-2az"/>
+                            <constraint firstItem="8yZ-Kw-Qhk" firstAttribute="top" secondItem="vLL-rN-Z40" secondAttribute="top" id="6Cr-3r-HnS"/>
+                            <constraint firstItem="8yZ-Kw-Qhk" firstAttribute="leading" secondItem="vLL-rN-Z40" secondAttribute="leading" id="FZw-hj-aHj"/>
+                            <constraint firstItem="Y0N-Fe-Ekf" firstAttribute="trailing" secondItem="8yZ-Kw-Qhk" secondAttribute="trailing" id="Vh8-nm-ifQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y0N-Fe-Ekf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lnk-U8-JYc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYP-Wq-Gvz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937.68115942028987" y="95.758928571428569"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="gFI-OB-zwY">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="2l2-td-zhj" customClass="LoginVC" customModule="FindYourFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KuR-Un-a1V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login4" translatesAutoresizingMaskIntoConstraints="NO" id="b1w-UR-YU4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="jYz-cH-doW">
+                                <rect key="frame" x="20" y="64" width="374" height="287.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcO-jy-StH">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="35.5"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="30"/>
+                                        <color key="textColor" red="0.040944786269999998" green="0.040944786269999998" blue="0.040944786269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r3u-w1-JHm">
+                                        <rect key="frame" x="0.0" y="47.5" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="B1z-9y-1ZN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jwq-bj-QaF">
+                                        <rect key="frame" x="0.0" y="99.5" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="pA9-bc-AcI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5k8-qu-ABh">
+                                        <rect key="frame" x="0.0" y="151.5" width="374" height="32"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <state key="normal" title="Olvidaste tu contraseña?">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="forgotPassClicked:" destination="2l2-td-zhj" eventType="touchUpInside" id="SXQ-tr-pWx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jj-rM-DuK" customClass="RoundedButton" customModule="FindYourFit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="195.5" width="374" height="40"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="RoL-uQ-5xs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                        <state key="normal" title="Iniciar sesión">
+                                            <color key="titleColor" red="0.040944786269999998" green="0.040944786269999998" blue="0.040944786269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LoginClicked:" destination="2l2-td-zhj" eventType="touchUpInside" id="rJn-jc-Z0v"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuu-Jd-YVc" customClass="RoundedButton" customModule="FindYourFit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="247.5" width="374" height="40"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="hLD-Wd-R5T"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                        <state key="normal" title="Registrarse">
+                                            <color key="titleColor" red="0.040944786269999998" green="0.040944786269999998" blue="0.040944786269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="9Ga-WQ-hhd" kind="presentation" modalPresentationStyle="fullScreen" id="OXz-kI-QIE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hMv-t7-QOY">
+                                <rect key="frame" x="188.5" y="213" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.040944786269999998" green="0.040944786269999998" blue="0.040944786269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hMv-t7-QOY" firstAttribute="centerX" secondItem="KuR-Un-a1V" secondAttribute="centerX" id="06y-on-I89"/>
+                            <constraint firstItem="dBF-cG-ro3" firstAttribute="trailing" secondItem="jYz-cH-doW" secondAttribute="trailing" constant="20" id="2Fr-e0-C4r"/>
+                            <constraint firstItem="b1w-UR-YU4" firstAttribute="top" secondItem="KuR-Un-a1V" secondAttribute="top" id="GJ7-YI-4pe"/>
+                            <constraint firstItem="hMv-t7-QOY" firstAttribute="centerY" secondItem="5k8-qu-ABh" secondAttribute="centerY" id="Ugn-hX-snU"/>
+                            <constraint firstItem="jYz-cH-doW" firstAttribute="leading" secondItem="dBF-cG-ro3" secondAttribute="leading" constant="20" id="UuL-pq-jEN"/>
+                            <constraint firstItem="jYz-cH-doW" firstAttribute="top" secondItem="dBF-cG-ro3" secondAttribute="top" constant="20" id="j2S-jd-A19"/>
+                            <constraint firstItem="b1w-UR-YU4" firstAttribute="leading" secondItem="dBF-cG-ro3" secondAttribute="leading" id="mFo-EN-Jmb"/>
+                            <constraint firstItem="b1w-UR-YU4" firstAttribute="trailing" secondItem="dBF-cG-ro3" secondAttribute="trailing" id="mtn-oh-cyQ"/>
+                            <constraint firstAttribute="bottom" secondItem="b1w-UR-YU4" secondAttribute="bottom" id="yjn-5d-hzX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dBF-cG-ro3"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="bDN-yY-npZ"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="hMv-t7-QOY" id="RUp-GS-9FZ"/>
+                        <outlet property="emailTxt" destination="r3u-w1-JHm" id="pFZ-s3-ecw"/>
+                        <outlet property="passwordTxt" destination="jwq-bj-QaF" id="qdF-gN-C20"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATa-vx-nt6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801.449275362319" y="96.428571428571431"/>
+        </scene>
+        <!--RegisterVC-->
+        <scene sceneID="OqY-Mg-McB">
+            <objects>
+                <viewController id="9Ga-WQ-hhd" customClass="RegisterVC" customModule="FindYourFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="46h-ER-3Fl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login4" translatesAutoresizingMaskIntoConstraints="NO" id="HMc-Ks-2h7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Q1u-fK-KHE">
+                                <rect key="frame" x="20" y="64" width="374" height="599.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registrarse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkM-Ur-Q5F">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="35.5"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="30"/>
+                                        <color key="textColor" red="0.040944786269999998" green="0.040944786269999998" blue="0.040944786269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yga-Pt-kZ2">
+                                        <rect key="frame" x="0.0" y="50.5" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="esn-XY-4lC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No borrar el código (+595) e ingresar el número sin espacios." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vZg-dB-mBw">
+                                        <rect key="frame" x="0.0" y="105.5" width="374" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
+                                        <color key="textColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+595" borderStyle="roundedRect" placeholder="numero de teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jsR-wN-3Hc">
+                                        <rect key="frame" x="0.0" y="136" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7q7-ff-QTu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1BY-9W-ik3">
+                                        <rect key="frame" x="0.0" y="191" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="hF6-mc-H6K"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AmS-bg-cYg">
+                                        <rect key="frame" x="0.0" y="246" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="aGO-GX-fE3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirmar contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8yn-3W-EHz">
+                                        <rect key="frame" x="0.0" y="301" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="QWn-4S-VVG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dirección" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ld-j4-oit">
+                                        <rect key="frame" x="0.0" y="356" width="374" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dirección" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="co8-nU-66L">
+                                        <rect key="frame" x="0.0" y="394.5" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="diX-05-v2w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="numero de casa / departamento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qzm-Ra-C97">
+                                        <rect key="frame" x="0.0" y="449.5" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="tqP-uI-I7G"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="referencias" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3vb-BG-RHy">
+                                        <rect key="frame" x="0.0" y="504.5" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="4QF-rl-5y9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c02-hi-49s" customClass="RoundedButton" customModule="FindYourFit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="559.5" width="374" height="40"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="HLk-iE-QP6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                        <state key="normal" title="Registrarse">
+                                            <color key="titleColor" red="0.040944786269999998" green="0.040944786269999998" blue="0.040944786269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registerClicked:" destination="9Ga-WQ-hhd" eventType="touchUpInside" id="ZyJ-f2-Jzp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="AmS-bg-cYg" secondAttribute="trailing" id="rnH-MH-1m1"/>
+                                </constraints>
+                            </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ZNN-zo-e8V">
+                                <rect key="frame" x="188.5" y="675.5" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-vJ-quI">
+                                <rect key="frame" x="326" y="308.5" width="64" height="43"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="DjS-q7-jvo">
+                                <rect key="frame" x="326" y="363.5" width="64" height="43"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3c-g2-h03">
+                                <rect key="frame" x="20" y="32" width="49" height="32"/>
+                                <fontDescription key="fontDescription" name="Prime-Regular" family="Prime" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.040944786269999998" green="0.040944786269999998" blue="0.040944786269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2l2-td-zhj" kind="presentation" modalPresentationStyle="fullScreen" id="tR5-3m-b9i"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a5u-Je-Nvd">
+                                <rect key="frame" x="344" y="200.5" width="40" height="39"/>
+                                <color key="tintColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Kny-dD-urL"/>
+                                </constraints>
+                            </imageView>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nal-CF-a9T" customClass="RoundedShadowView" customModule="FindYourFit" customModuleProvider="target">
+                                <rect key="frame" x="89.5" y="273.5" width="235" height="181"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zy7-Gu-RJd">
+                                        <rect key="frame" x="20" y="5" width="195" height="26"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Su numero de telefono será utilizado para confirmar las reservas realizadas por la app." lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dvD-yA-rsV">
+                                        <rect key="frame" x="10" y="41" width="215" height="80"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07T-rQ-zgF" customClass="RoundedButton" customModule="FindYourFit" customModuleProvider="target">
+                                        <rect key="frame" x="97.5" y="131" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="9ZW-jS-nSn"/>
+                                            <constraint firstAttribute="width" constant="40" id="rss-tg-pwx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <state key="normal" title="Ok">
+                                            <color key="titleColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backInfoBtnPressed:" destination="9Ga-WQ-hhd" eventType="touchUpInside" id="I31-TF-KGl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="06D-dl-leE"/>
+                                    <constraint firstItem="Zy7-Gu-RJd" firstAttribute="leading" secondItem="nal-CF-a9T" secondAttribute="leading" constant="20" id="2e4-Yb-yFE"/>
+                                    <constraint firstAttribute="trailing" secondItem="dvD-yA-rsV" secondAttribute="trailing" constant="10" id="49c-Wy-l8q"/>
+                                    <constraint firstItem="Zy7-Gu-RJd" firstAttribute="top" secondItem="nal-CF-a9T" secondAttribute="top" constant="5" id="4bH-YA-Tat"/>
+                                    <constraint firstItem="dvD-yA-rsV" firstAttribute="leading" secondItem="nal-CF-a9T" secondAttribute="leading" constant="10" id="4s6-y2-GNq"/>
+                                    <constraint firstAttribute="height" constant="181" id="Nai-F6-YC3"/>
+                                    <constraint firstItem="07T-rQ-zgF" firstAttribute="centerX" secondItem="nal-CF-a9T" secondAttribute="centerX" id="Rm9-Fe-aUD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zy7-Gu-RJd" secondAttribute="trailing" constant="20" id="WLD-ef-NWf"/>
+                                    <constraint firstItem="dvD-yA-rsV" firstAttribute="top" secondItem="Zy7-Gu-RJd" secondAttribute="bottom" constant="10" id="rhy-v2-5NK"/>
+                                    <constraint firstAttribute="bottom" secondItem="07T-rQ-zgF" secondAttribute="bottom" constant="10" id="uTx-GF-V0Z"/>
+                                    <constraint firstItem="07T-rQ-zgF" firstAttribute="top" secondItem="dvD-yA-rsV" secondAttribute="bottom" constant="10" id="x34-tc-Vy2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.040944786269999998" green="0.040944786269999998" blue="0.040944786269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AYU-AB-v2P" firstAttribute="trailing" secondItem="Q1u-fK-KHE" secondAttribute="trailing" constant="20" id="3ra-xw-4dF"/>
+                            <constraint firstItem="DjS-q7-jvo" firstAttribute="height" secondItem="8yn-3W-EHz" secondAttribute="height" multiplier="1.075" id="6OY-jP-sj8"/>
+                            <constraint firstItem="a5u-Je-Nvd" firstAttribute="height" secondItem="jsR-wN-3Hc" secondAttribute="height" id="6rG-yW-9AU"/>
+                            <constraint firstItem="Q1u-fK-KHE" firstAttribute="top" secondItem="d3c-g2-h03" secondAttribute="bottom" id="9lL-TH-kB3"/>
+                            <constraint firstItem="HMc-Ks-2h7" firstAttribute="trailing" secondItem="AYU-AB-v2P" secondAttribute="trailing" id="ADW-Th-pTX"/>
+                            <constraint firstItem="HMc-Ks-2h7" firstAttribute="top" secondItem="46h-ER-3Fl" secondAttribute="top" id="DTv-G0-sve"/>
+                            <constraint firstItem="Q1u-fK-KHE" firstAttribute="leading" secondItem="AYU-AB-v2P" secondAttribute="leading" constant="20" id="E28-Mk-h5m"/>
+                            <constraint firstItem="a5u-Je-Nvd" firstAttribute="centerY" secondItem="jsR-wN-3Hc" secondAttribute="centerY" id="J8P-5s-64s"/>
+                            <constraint firstItem="a5u-Je-Nvd" firstAttribute="trailing" secondItem="jsR-wN-3Hc" secondAttribute="trailing" constant="-10" id="Qk8-7H-6sQ"/>
+                            <constraint firstItem="d3c-g2-h03" firstAttribute="leading" secondItem="AYU-AB-v2P" secondAttribute="leading" constant="20" id="UW4-y7-x94"/>
+                            <constraint firstItem="ZNN-zo-e8V" firstAttribute="centerX" secondItem="46h-ER-3Fl" secondAttribute="centerX" id="VmM-i3-Rpj"/>
+                            <constraint firstItem="nal-CF-a9T" firstAttribute="centerY" secondItem="Q1u-fK-KHE" secondAttribute="centerY" id="Xas-fh-njs"/>
+                            <constraint firstItem="HMc-Ks-2h7" firstAttribute="leading" secondItem="AYU-AB-v2P" secondAttribute="leading" id="YtJ-yt-5aq"/>
+                            <constraint firstAttribute="bottom" secondItem="HMc-Ks-2h7" secondAttribute="bottom" id="c03-er-eUT"/>
+                            <constraint firstItem="g7G-vJ-quI" firstAttribute="trailing" secondItem="AmS-bg-cYg" secondAttribute="trailing" constant="-4" id="eMB-FT-ciP"/>
+                            <constraint firstItem="DjS-q7-jvo" firstAttribute="trailing" secondItem="8yn-3W-EHz" secondAttribute="trailing" constant="-4" id="fyQ-zz-xbI"/>
+                            <constraint firstItem="g7G-vJ-quI" firstAttribute="centerY" secondItem="AmS-bg-cYg" secondAttribute="centerY" id="kLA-cu-jEK"/>
+                            <constraint firstItem="ZNN-zo-e8V" firstAttribute="top" secondItem="Q1u-fK-KHE" secondAttribute="bottom" constant="12" id="l2l-5p-Cwp"/>
+                            <constraint firstItem="DjS-q7-jvo" firstAttribute="centerY" secondItem="8yn-3W-EHz" secondAttribute="centerY" id="os3-CY-nVp"/>
+                            <constraint firstItem="g7G-vJ-quI" firstAttribute="height" secondItem="AmS-bg-cYg" secondAttribute="height" multiplier="1.075" id="rLL-Bm-etn"/>
+                            <constraint firstItem="nal-CF-a9T" firstAttribute="centerX" secondItem="46h-ER-3Fl" secondAttribute="centerX" id="wLY-D8-6vN"/>
+                            <constraint firstItem="Q1u-fK-KHE" firstAttribute="top" secondItem="AYU-AB-v2P" secondAttribute="top" constant="20" id="x6Z-Ak-N5n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AYU-AB-v2P"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hqy-7L-Nox"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ZNN-zo-e8V" id="Ocd-y3-dWO"/>
+                        <outlet property="addressTxt" destination="co8-nU-66L" id="9wX-wG-WHa"/>
+                        <outlet property="confirmPassCheckImg" destination="DjS-q7-jvo" id="Ne9-t6-6hc"/>
+                        <outlet property="confirmPasswordTxt" destination="8yn-3W-EHz" id="NvA-65-gZ9"/>
+                        <outlet property="emailTxt" destination="1BY-9W-ik3" id="bs9-dw-JCb"/>
+                        <outlet property="houseNumberTxt" destination="Qzm-Ra-C97" id="vsU-Mm-NEP"/>
+                        <outlet property="infoView" destination="nal-CF-a9T" id="UUG-Ac-7Dy"/>
+                        <outlet property="passCheckImg" destination="g7G-vJ-quI" id="41e-oy-PMk"/>
+                        <outlet property="passwordTxt" destination="AmS-bg-cYg" id="SWl-nW-h8i"/>
+                        <outlet property="phoneInfo" destination="a5u-Je-Nvd" id="orH-36-9VY"/>
+                        <outlet property="phoneNumberTxt" destination="jsR-wN-3Hc" id="2gW-yi-8Na"/>
+                        <outlet property="refereciasTxt" destination="3vb-BG-RHy" id="xFa-ZR-ZxW"/>
+                        <outlet property="usernameTxt" destination="Yga-Pt-kZ2" id="Hl7-3M-yhI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1M-K0-2RD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2585.507246376812" y="101.78571428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NXv-1G-WtJ">
+            <objects>
+                <navigationController storyboardIdentifier="LoginVC" wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="bdu-ro-abz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="image" backIndicatorTransitionMaskImage="image" id="VUy-YX-EI4">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1GY-s8-G0U" kind="relationship" relationship="rootViewController" id="Tlq-F9-PoV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UhT-9A-K4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.536231884057973" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="tR5-3m-b9i"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Login1" width="3882" height="4853"/>
+        <image name="Login4" width="2341" height="2349"/>
+        <image name="image" width="360.5" height="360.5"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="red_check" width="64" height="64"/>
+    </resources>
+</document>

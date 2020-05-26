@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileVC" customModule="FindYourFit" customModuleProvider="target">
+            <connections>
+                <outlet property="addressTxt" destination="6H4-Ud-YqM" id="h0h-fu-rRb"/>
+                <outlet property="houseNumberTxt" destination="gJO-cU-Occ" id="59D-vo-pCp"/>
+                <outlet property="referencesTxt" destination="vRM-3x-Vgc" id="lW6-xE-Zw7"/>
+                <outlet property="usernameTxt" destination="y2t-nr-d08" id="hDs-mS-DZx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pUA-D1-g22">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="11j-xO-ihT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLq-ql-hxV">
+                                <rect key="frame" x="20" y="263.5" width="374" height="369"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Editar Perfil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khW-pm-buu">
+                                        <rect key="frame" x="20" y="20" width="334" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oqf-cq-rgf">
+                                        <rect key="frame" x="20" y="53.5" width="334" height="250.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqP-nv-a1Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y2t-nr-d08">
+                                                <rect key="frame" x="0.0" y="21.5" width="334" height="34"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos del perfil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNK-oa-vRP">
+                                                <rect key="frame" x="0.0" y="55.5" width="334" height="28.5"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dirección" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVF-JH-8Tk">
+                                                <rect key="frame" x="0.0" y="84" width="334" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dirección" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6H4-Ud-YqM">
+                                                <rect key="frame" x="0.0" y="105.5" width="334" height="34"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número de casa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRf-ff-1mo">
+                                                <rect key="frame" x="0.0" y="139.5" width="334" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="número de casa" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gJO-cU-Occ">
+                                                <rect key="frame" x="0.0" y="161" width="334" height="34"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Referencias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4w8-TA-sH4">
+                                                <rect key="frame" x="0.0" y="195" width="334" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="referencias" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vRM-3x-Vgc">
+                                                <rect key="frame" x="0.0" y="216.5" width="334" height="34"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wdj-Eg-tLN">
+                                        <rect key="frame" x="10" y="324" width="354" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKM-Pc-dVM" customClass="RoundedButton" customModule="FindYourFit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="35"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                                <state key="normal" title="Atrás">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="backBtnWasPressed:" destination="-1" eventType="touchUpInside" id="zYr-s8-RcU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTv-BW-ANE" customClass="RoundedButton" customModule="FindYourFit" customModuleProvider="target">
+                                                <rect key="frame" x="182" y="0.0" width="172" height="35"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                                <state key="normal" title="Guardar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="saveChangesBtnWasPressed:" destination="-1" eventType="touchUpInside" id="oyI-WH-oXL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="krq-Mu-ZTu"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wdj-Eg-tLN" secondAttribute="trailing" constant="10" id="2fp-Yq-UAx"/>
+                                    <constraint firstItem="oqf-cq-rgf" firstAttribute="leading" secondItem="dLq-ql-hxV" secondAttribute="leading" constant="20" id="5rQ-70-1l0"/>
+                                    <constraint firstItem="wdj-Eg-tLN" firstAttribute="leading" secondItem="dLq-ql-hxV" secondAttribute="leading" constant="10" id="CBY-KT-FuO"/>
+                                    <constraint firstAttribute="bottom" secondItem="wdj-Eg-tLN" secondAttribute="bottom" constant="10" id="KMz-FL-9Iy"/>
+                                    <constraint firstItem="khW-pm-buu" firstAttribute="leading" secondItem="dLq-ql-hxV" secondAttribute="leading" constant="20" id="V2n-HT-0cq"/>
+                                    <constraint firstAttribute="trailing" secondItem="oqf-cq-rgf" secondAttribute="trailing" constant="20" id="XvV-0v-rMo"/>
+                                    <constraint firstItem="wdj-Eg-tLN" firstAttribute="top" secondItem="oqf-cq-rgf" secondAttribute="bottom" constant="20" id="ciC-vF-DJ1"/>
+                                    <constraint firstItem="khW-pm-buu" firstAttribute="top" secondItem="dLq-ql-hxV" secondAttribute="top" constant="20" id="erf-YE-2F7"/>
+                                    <constraint firstAttribute="trailing" secondItem="khW-pm-buu" secondAttribute="trailing" constant="20" id="ezf-zY-3C1"/>
+                                    <constraint firstItem="oqf-cq-rgf" firstAttribute="top" secondItem="khW-pm-buu" secondAttribute="bottom" constant="10" id="mhg-uh-3Ja"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dLq-ql-hxV" secondAttribute="trailing" constant="20" id="WqA-00-Mqm"/>
+                            <constraint firstItem="dLq-ql-hxV" firstAttribute="leading" secondItem="11j-xO-ihT" secondAttribute="leading" constant="20" id="aeH-yp-l9t"/>
+                            <constraint firstItem="dLq-ql-hxV" firstAttribute="centerY" secondItem="11j-xO-ihT" secondAttribute="centerY" id="e47-Ie-Xoc"/>
+                            <constraint firstItem="dLq-ql-hxV" firstAttribute="centerX" secondItem="11j-xO-ihT" secondAttribute="centerX" id="nfI-ML-EEh"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pUA-D1-g22" secondAttribute="bottom" id="9au-gn-QyZ"/>
+                <constraint firstItem="pUA-D1-g22" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eKc-ta-fGH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pUA-D1-g22" secondAttribute="trailing" id="fUk-QJ-5CK"/>
+                <constraint firstItem="pUA-D1-g22" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="m73-DB-lta"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
+        </view>
+    </objects>
+</document>

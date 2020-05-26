@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M3u-IZ-hJK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="HomeVC" customModule="FindYourFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ju2-4d-Qae">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FindYourFit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0fT-hB-mMP">
+                                <rect key="frame" x="50" y="415.5" width="314" height="65"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="55"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Las mejores promociones, en un solo lugar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jyo-nT-jZs">
+                                <rect key="frame" x="40" y="488.5" width="334" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="isC-Js-H5w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.040944786269999998" green="0.040944786269999998" blue="0.040944786269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0fT-hB-mMP" firstAttribute="leading" secondItem="THn-kP-zgE" secondAttribute="leading" constant="50" id="4PD-Rr-VRs"/>
+                            <constraint firstItem="THn-kP-zgE" firstAttribute="trailing" secondItem="0fT-hB-mMP" secondAttribute="trailing" constant="50" id="Cm1-L0-YfC"/>
+                            <constraint firstItem="0fT-hB-mMP" firstAttribute="centerY" secondItem="Ju2-4d-Qae" secondAttribute="centerY" id="R5r-DW-INF"/>
+                            <constraint firstItem="0fT-hB-mMP" firstAttribute="centerX" secondItem="Ju2-4d-Qae" secondAttribute="centerX" id="VQ2-1R-K3d"/>
+                            <constraint firstItem="jyo-nT-jZs" firstAttribute="leading" secondItem="THn-kP-zgE" secondAttribute="leading" constant="40" id="YMb-fp-LIm"/>
+                            <constraint firstItem="THn-kP-zgE" firstAttribute="trailing" secondItem="jyo-nT-jZs" secondAttribute="trailing" constant="40" id="kK0-G7-DWe"/>
+                            <constraint firstItem="jyo-nT-jZs" firstAttribute="top" secondItem="0fT-hB-mMP" secondAttribute="bottom" constant="8" id="oDm-TJ-6VR"/>
+                            <constraint firstItem="jyo-nT-jZs" firstAttribute="centerX" secondItem="Ju2-4d-Qae" secondAttribute="centerX" id="y3E-a5-q6s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="THn-kP-zgE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hRQ-Js-fcD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ij5-zd-7dK">
+            <objects>
+                <navigationController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="M3u-IZ-hJK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Cr5-A9-71K">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="seT-HS-Qcu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LD7-TO-HEO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+</document>

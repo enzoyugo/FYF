@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewCollVC" customModule="FYF_Beta" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="cZz-72-fWm" id="4F6-bx-2Wy"/>
+                <outlet property="addCollBtn" destination="LRH-qk-7w7" id="wmI-BH-qvm"/>
+                <outlet property="descriptionColl" destination="Dwo-Tj-h0b" id="aD4-6J-X8e"/>
+                <outlet property="imageColl" destination="bRF-7N-Qsl" id="T8e-5R-m4y"/>
+                <outlet property="nameTxt" destination="IOG-zi-mRC" id="4RS-0G-jZa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2z-a7-V3Y">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eFK-aH-iWa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IVW-96-F9x">
+                                <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="74e-bS-Joi">
+                                    <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <vibrancyEffect>
+                                    <blurEffect style="regular"/>
+                                </vibrancyEffect>
+                            </visualEffectView>
+                        </subviews>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mo8-bC-NJ8">
+                    <rect key="frame" x="20" y="268" width="374" height="401"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nueva collección" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oq-aa-cJk">
+                            <rect key="frame" x="10" y="8" width="354" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bRF-7N-Qsl">
+                            <rect key="frame" x="92" y="40" width="190" height="188"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="190" id="8Co-Ld-xyh"/>
+                                <constraint firstAttribute="height" constant="190" id="Ead-i1-NyA"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3hJ-sU-uvt">
+                            <rect key="frame" x="20" y="356" width="334" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1h-Rg-HtU" customClass="RoundedButton" customModule="FYF_Beta" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="157" height="40"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                    <state key="normal" title="Atrás">
+                                        <color key="titleColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="atrasBtnPressed:" destination="-1" eventType="touchUpInside" id="4A6-Bv-JBt"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRH-qk-7w7" customClass="RoundedButton" customModule="FYF_Beta" customModuleProvider="target">
+                                    <rect key="frame" x="177" y="0.0" width="157" height="40"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                    <state key="normal" title="Agregar">
+                                        <color key="titleColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="agregarCollBtn:" destination="-1" eventType="touchUpInside" id="3u2-1b-JaM"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="EyQ-I2-oIz"/>
+                            </constraints>
+                        </stackView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de la colección" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IOG-zi-mRC">
+                            <rect key="frame" x="40" y="233" width="294" height="34"/>
+                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Descripción de la colección" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dwo-Tj-h0b">
+                            <rect key="frame" x="20" y="275" width="334" height="71"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="71" id="agz-JU-aTt"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="IOG-zi-mRC" secondAttribute="trailing" constant="40" id="1Ts-jw-rZv"/>
+                        <constraint firstItem="3hJ-sU-uvt" firstAttribute="top" secondItem="Dwo-Tj-h0b" secondAttribute="bottom" constant="10" id="9mW-7N-MZg"/>
+                        <constraint firstItem="0Oq-aa-cJk" firstAttribute="top" secondItem="Mo8-bC-NJ8" secondAttribute="top" constant="8" id="A0m-Jo-fNc"/>
+                        <constraint firstAttribute="bottom" secondItem="3hJ-sU-uvt" secondAttribute="bottom" constant="5" id="CzK-tF-hr5"/>
+                        <constraint firstAttribute="trailing" secondItem="Dwo-Tj-h0b" secondAttribute="trailing" constant="20" id="Gxd-TF-ga1"/>
+                        <constraint firstAttribute="trailing" secondItem="3hJ-sU-uvt" secondAttribute="trailing" constant="20" id="J3q-OP-rR2"/>
+                        <constraint firstItem="IOG-zi-mRC" firstAttribute="top" secondItem="bRF-7N-Qsl" secondAttribute="bottom" constant="3.5" id="L6p-Hp-KIv"/>
+                        <constraint firstItem="bRF-7N-Qsl" firstAttribute="top" secondItem="0Oq-aa-cJk" secondAttribute="bottom" constant="8" id="VpM-fP-OIg"/>
+                        <constraint firstItem="3hJ-sU-uvt" firstAttribute="leading" secondItem="Mo8-bC-NJ8" secondAttribute="leading" constant="20" id="eU5-Fw-2mv"/>
+                        <constraint firstItem="Dwo-Tj-h0b" firstAttribute="top" secondItem="IOG-zi-mRC" secondAttribute="bottom" constant="8" id="fFE-mw-el9"/>
+                        <constraint firstAttribute="trailing" secondItem="0Oq-aa-cJk" secondAttribute="trailing" constant="10" id="fez-su-ioZ"/>
+                        <constraint firstItem="bRF-7N-Qsl" firstAttribute="centerX" secondItem="Mo8-bC-NJ8" secondAttribute="centerX" id="hqM-r5-XBk"/>
+                        <constraint firstItem="Dwo-Tj-h0b" firstAttribute="leading" secondItem="Mo8-bC-NJ8" secondAttribute="leading" constant="20" id="oxY-lq-5ZN"/>
+                        <constraint firstItem="IOG-zi-mRC" firstAttribute="leading" secondItem="Mo8-bC-NJ8" secondAttribute="leading" constant="40" id="v7p-y7-fJw"/>
+                        <constraint firstItem="0Oq-aa-cJk" firstAttribute="leading" secondItem="Mo8-bC-NJ8" secondAttribute="leading" constant="10" id="yjR-Qd-Nsd"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cZz-72-fWm">
+                    <rect key="frame" x="189" y="523" width="36" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="i2z-a7-V3Y" secondAttribute="bottom" id="47r-Zg-cLm"/>
+                <constraint firstItem="i2z-a7-V3Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4B7-sl-NFG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i2z-a7-V3Y" secondAttribute="trailing" id="A3S-i1-Hvq"/>
+                <constraint firstItem="Mo8-bC-NJ8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ApG-qL-tAr"/>
+                <constraint firstItem="Mo8-bC-NJ8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="224" id="a6p-mh-bbg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mo8-bC-NJ8" secondAttribute="trailing" constant="20" id="c32-mV-1xd"/>
+                <constraint firstItem="cZz-72-fWm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="189" id="hCd-Go-UHn"/>
+                <constraint firstItem="Mo8-bC-NJ8" firstAttribute="centerX" secondItem="cZz-72-fWm" secondAttribute="centerX" id="oi3-Kw-b9s"/>
+                <constraint firstItem="i2z-a7-V3Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="on0-IU-IGG"/>
+                <constraint firstItem="cZz-72-fWm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="479" id="rVC-14-Jdu"/>
+                <constraint firstItem="Mo8-bC-NJ8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xzc-Ns-elW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera.fill" catalog="system" width="128" height="96"/>
+    </resources>
+</document>

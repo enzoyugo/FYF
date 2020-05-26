@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addCollectionsTblViewCell" rowHeight="100" id="KGk-i7-Jjw" customClass="addCollectionsTblViewCell" customModule="FYF_Beta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="albertinavestido" translatesAutoresizingMaskIntoConstraints="NO" id="nZK-oc-eT8">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="1Xu-Pq-0Ut"/>
+                            <constraint firstAttribute="height" constant="100" id="DWb-dQ-HpR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de la colleccion" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Qi4-WC-dZt">
+                        <rect key="frame" x="110" y="0.0" width="236" height="100"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Qi4-WC-dZt" secondAttribute="trailing" id="51Q-Yk-Ekh"/>
+                    <constraint firstItem="nZK-oc-eT8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="L66-ww-4yw"/>
+                    <constraint firstAttribute="bottom" secondItem="Qi4-WC-dZt" secondAttribute="bottom" id="Ocz-lx-QC1"/>
+                    <constraint firstItem="Qi4-WC-dZt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RlQ-go-Nht"/>
+                    <constraint firstItem="nZK-oc-eT8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Umr-BJ-Cc5"/>
+                    <constraint firstAttribute="bottom" secondItem="nZK-oc-eT8" secondAttribute="bottom" id="hPG-xw-nwZ"/>
+                    <constraint firstItem="Qi4-WC-dZt" firstAttribute="leading" secondItem="nZK-oc-eT8" secondAttribute="trailing" constant="10" id="z2S-p1-KFl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collImage" destination="nZK-oc-eT8" id="9it-X1-e0i"/>
+                <outlet property="collLbl" destination="Qi4-WC-dZt" id="Jei-Cx-AsD"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="100.44642857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="albertinavestido" width="1000" height="1500"/>
+    </resources>
+</document>
